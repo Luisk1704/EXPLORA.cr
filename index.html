@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Explora</title>
+    <!-- Required meta tags -->
+    <meta name="description"
+        content="Pagina que te permite conocer algunos de los sitios que puedes explorar con nuestra agencia de viajes en Costa Rica">
+    <meta name="keywords" content="Universo,Planetas,Estrellas,Naturaleza,Animales,Humanos,Física,Cuántica">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
+    
+</head>
+
+<body onload="getfile()">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light" id=" navegador">
+        <div class="container">
+            <a class="navbar-brand col-lg-6 enlace-nav" id="logotipo" href="index.html">
+                <img src="img/perezoso-icono.png" onclick="getfile()" height="50px" width="50px">
+                <h1 id="título">EXPLORA<em id="tittle">CR</em></h1>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-lg-6 div-nav" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item lista">
+                        <a name="1" onclick="getfile()" class="nav-link enlace" href="#">Home <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item lista">
+                        <a name="2" onclick="getfile2()" class="nav-link enlace" href="#">Informacion</a>
+                    </li>
+                    <li class="nav-item lista">
+                        <a name="3" onclick="getfile3()" class="nav-link enlace" href="#">Autor</a>
+                    </li>
+                    <li class="nav-item dropdown lista">
+                        <a class="nav-link dropdown-toggle enlace" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Contenido</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a name="4" onclick="getfile4()" class="dropdown-item enlace" href="#">Historia</a>                        
+                            <a name="6" onclick="getfile6()" class="dropdown-item enlace" href="#">Galería de
+                                imagenes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item lista">
+                        <a name="3" onclick="getfile7()" id="click" class="nav-link enlace" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container" id="contenido">
+
+        
+          
+    </main>    
+    <footer id="footer" class="pie-pagina container">
+        <div class="col-lg-6 container">
+            <a href="#" class="col-lg-4 footer-nav footer-nav2" onclick="getfile()">Home</a>
+            <a href="#" class="col-lg-4 footer-nav footer-nav2" onclick="getfile2()">Acerca del sitio</a>
+            <a href="#" class="col-lg-4 footer-nav" onclick="getfile3()">Acerca del contacto</a>
+        </div>
+        <div id="footer-div">
+            <div id="date">&copy Derechos Reservados: Explora</div>
+            <script>
+                document.getElementById("date").innerHTML += "<a style='padding-left: 1%'>" + new Date().toDateString() + "</a>";
+            </script>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/main.js"></script> 
+    <script src="js/DOM.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

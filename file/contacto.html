@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="cont-principal container">
+        <form id="form" action="" method="">
+            <div class="row">
+                <div class="col-lg-4 container">
+                    <h2>Registrese Aquí</h2>
+                    <br>
+                    <div>
+                        <div class="row">
+                            <label for="name" class="label col-lg-6">Nombre</label>
+                            <input type="text" class="col-lg-6" name="name" id="name">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label for="middlename" class="label col-lg-6">Primer Apellido</label>
+                            <input type="text" class="col-lg-6" name="middlename" id="middlename">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label for="lastname" class="label col-lg-6">Segundo Apellido</label>
+                            <input type="text" class="col-lg-6" name="lastname" id="lastname">
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <div class="row">
+                            <label for="email" class="label col-lg-6">Correo</label>
+                            <input type="email" class="col-lg-6" name="email" id="email">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label for="date" class="label col-lg-6">Fecha de Nacimiento</label>
+                            <input type="date" class="col-lg-6" name="date" id="date">
+                        </div>
+                        <br>
+                        <div class="row"> 
+                            <label for="div-range" class="label col-lg-6">Rango de Ingreso</label>
+                            <div class="col-lg-6 row" name="div-range">
+                                <input type="range" class="col-lg-10"  onchange="muestravalor()" name="range" id="range">
+                                <label id="show" class="col-lg-2">0</label>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="label">Genero</label>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="male">Masculino</label>
+                                <input type="checkbox" name="male" id="male">
+                                <label for="female">Female</label>
+                                <input type="checkbox" name="female" id="female">
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <div class="dropdown open">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Nivel Educativo
+                                </button>
+                                <select class="dropdown-menu" name="educational-level" id="educational-level"
+                                    aria-labelledby="triggerId" multiple>
+                                    <option class="dropdown-item" value="Primaria Completa">Primaria Completa</option>
+                                    <option class="dropdown-item" value="Secundaria Completa">Secundaria Completa</option>
+                                    <option class="dropdown-item" value="Universitaria incompleta">Universitaria incompleta</option>
+                                    <option class="dropdown-item" value="Bachiller">Bachiller</option>
+                                    <option class="dropdown-item" value="Licenciado">Licenciado</option>
+                                    <option class="dropdown-item" value="Master">Master</option>
+                                    <option class="dropdown-item" value="Doctor">Doctor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <input class="boton2" type="submit" onclick="valida()" name="submit" id="submit">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <img src="img/canopy.jpg" width="100%">
+                </div>
+            </div>                                         
+        </form>        
+    </div>
+</body>
+</html>
